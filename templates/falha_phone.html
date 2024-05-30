@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<title>Verificador de Entregas</title>
+<meta name="description" content="Our first page">
+<meta name="keywords" content="html tutorial template">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}">
+<style>
+    ::placeholder {
+  color: rgb(231, 13, 13);
+}
+</style>
+</head>
+ 
+<center>
+<body style="background-color:rgb(68, 192, 161)">
+    <b style="font-size:70px;">&#10060;</b>
+    <h1 style="color:rgb(128, 0, 0);">Número de telefone inválido!</h1>
+    <b><p>Favor verificar o número e se está no formato correto!<br>+5547999999XXX</p></b> 
+    <form action="/" method="get">
+        <button style="height:50px;width:250px;background-color:rgb(160, 159, 159); border-color:rgb(0, 0, 0)"><strong>Voltar à tela inicial!</strong></button>
+    </form>
+</body>
+</center>
+</html>

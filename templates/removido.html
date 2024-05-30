@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<title>Verificador de Entregas</title>
+<meta name="description" content="Our first page">
+<meta name="keywords" content="html tutorial template">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}">
+<style>
+    ::placeholder {
+  color: red;
+}
+</style>
+</head>
+
+<center>
+<body style="background-color:rgb(68, 192, 161)">
+    <h1 style="color:red;">Você parará de receber atualizações sobre o pedido referente ao código:</h1>
+    <span style="border:4px solid rgb(128, 0, 0);border-radius:20px;font-family:'Press Start 2P',cursive;padding-left:7px;padding-right:7px;padding-top:1px; padding-bottom:1px;background-color: rgb(128, 0, 0);color:white ;">
+      {{code}} 
+      &#x2713; 
+      </span>
+      <strong><p>Agradecemos por ter usado nossos serviços!:)</p></strong>  
+</body>
+</center>
+</html>

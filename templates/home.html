@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<title>Verificador De Entregas</title>
+<meta name="description" content="Our first page">
+<meta name="keywords" content="html tutorial template">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}">
+<style>
+    ::placeholder {
+  color: rgb(0, 0, 0);
+    }
+</style>
+</head>
+
+<center>
+<body style="background-color:#70ddc2">
+  <div name="all">
+      <div name="form1">
+        <form action="/enviado" method="get">
+          <h1>CONSULTE O STATUS DO SEU PEDIDO AGORA<br> E SEJA ATUALIZADO SOBRE ELE <BR> TODO DIA AS 09:00 VIA SMS! </h1>
+          <input style="border:4px solid black;width:280px;height:30px;font-family:'Press Start 2P',cursive;padding-left:10px"required placeholder="Insira aqui o código de rastreio dos correios" size="33" style="height:30px;" name="code">
+          <p></p>
+          <input style="border:4px solid black;width:280px;height:30px;font-family:'Press Start 2P',cursive;padding-left:10px" required placeholder="Insira aqui o seu número de celular..." size="33" style="height:30px;" patter="[+9999999999999]{14}" name="phone">
+          <h5>Favor conferir se o número está correto!<br>Exemplo: +55478241XXXX<br>Não é necessário adicionar um 9 à frente do número</h5>
+
+          <p><input type="checkbox" required>Aceito Receber o Status Via SMS</p>
+          <p><input type="checkbox" name="day">Quero Receber o Status do meu pedido, todo dia as 09:00 da manhã via SMS</p>  
+          <button  style="height:50px;width:250px;background-color:rgb(160, 159, 159); border-color:rgb(0, 0, 0)"><strong>Soliciar Status</strong></button>
+        </form>
+      </div>
+    <div name="form2">
+      <form action="/parar" method="get">
+        <p></p>
+        <button style="height:35px;width:250px;background-color:rgb(160, 159, 159); border-color:rgb(0, 0, 0)"><strong>Já recebo o status,mas quero parar de receber</strong></button>
+      </form>
+    </div>
+  </div>
+</body>
+</center>
+
+
+</html>
