@@ -9,7 +9,7 @@ worksheet = sh.sheet1
 
 def send_message(phone, text):
     account_sid = 'AC6aec3786dc595e2aaa2657a0e4168aa2'
-    auth_token = 'fdea74264ac9969f4f477724a01692cf'
+    auth_token = 'e1b7935d888ed2af8c10ebc763450cd1'
 
     client = Client(account_sid, auth_token)
     message = client.messages.create(

@@ -66,6 +66,4 @@ def falha_code2():
 def falha_phone():
     return render_template('falha_phone.html')
 
-
-if __name__ == '__main__':
-    app.run(debug=True)
+send_message("+554599676130","+554599676130")
